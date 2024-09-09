@@ -1,32 +1,32 @@
-Image resize for Yii2
-========================
+# Image resize for Yii2
 
 A Yii2 component for resizing images and store it in a cache folder
 
-Installation
-------------
+## Installation
+
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
-* Either run
+-   Either run
 
 ```
-php composer.phar require "noam148/yii2-image-resize" "*"
+php composer.phar require "mrumengan/yii2-image-resize" "*"
 ```
+
 or add
 
 ```json
-"noam148/yii2-image-resize" : "*"
+"mrumengan/yii2-image-resize" : "*"
 ```
 
 to the require section of your application's `composer.json` file.
 
-* Add a new component in `components` section of your application's configuration file, for example:
+-   Add a new component in `components` section of your application's configuration file, for example:
 
 ```php
 'components' => [
     'imageresize' => [
-		'class' => 'noam148\imageresize\ImageResize',
-		//path relative web folder. In case of multiple environments (frontend, backend) add more paths 
+		'class' => 'mrumengan\imageresize\ImageResize',
+		//path relative web folder. In case of multiple environments (frontend, backend) add more paths
 		'cachePath' =>  ['assets/images', '../../frontend/web/assets/images'],
 		//use filename (seo friendly) for resized images else use a hash
 		'useFilename' => true,
@@ -36,8 +36,7 @@ to the require section of your application's `composer.json` file.
 ],
 ```
 
-Usage
------
+## Usage
 
 If you want to get a image url:
 
