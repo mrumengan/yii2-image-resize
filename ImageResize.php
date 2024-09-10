@@ -1,6 +1,6 @@
 <?php
 
-namespace rumengan\imageresize;
+namespace mrumengan\imageresize;
 
 use Imagine\Image\ImageInterface;
 use Imagine\Image\Point;
